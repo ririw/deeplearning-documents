@@ -49,8 +49,9 @@ lower error bound. That said, perhaps I'm wrong.
 Other approaches & experiments
 ------------------------------
 
-- Convolutional networks didn't seem to lead anywhere.
+- Convolutional networks didn't seem to lead anywhere, but I don't have much experience with them
 - More features, for example, the median image, didn't seem to add much either. They substantially increase training costs 
 - I have not fully explored direct autoencoding of patches. I regress from 15x15 pixels to a single pixel. We could instead go from 15x15 to 15x15 and 
   either run it over the image in strides of 15 pixels, or we could take strides of size one and then average out all the values we get for each pixel.
 - I haven't yet done full hyperparameter optimization. We should definitely get on this, it could put us over the edge.
+- I've played a little with the patch size, but I'm not sure how much difference it'll make.
